@@ -4,14 +4,14 @@ public class PracticeProblem {
 
 	}
 
-public static int lettesToFive(String phrase, char c){
+public static int lettersToFive(String phrase, char c){
 	int counter = 0;
 	for (int i = 0; i < phrase.length(); i++){
 		if (c == phrase.charAt(i)){
 counter++;
 		}
 		if(counter == 5){
-			return i;
+			return i+1;
 		} 
 	}
 	return -1;
