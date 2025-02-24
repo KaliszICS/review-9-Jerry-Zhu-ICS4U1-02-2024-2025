@@ -6,13 +6,15 @@ public class PracticeProblem {
 
 public static int lettersToFive(String phrase, char c){
 	int counter = 0;
-	for (int i = 0; i < phrase.length(); i++){
+	int i = 0;
+	while(i < phrase.length()){
 		if (c == phrase.charAt(i)){
 counter++;
 		}
 		if(counter == 5){
 			return i+1;
 		} 
+		i++;
 	}
 	return -1;
 }
